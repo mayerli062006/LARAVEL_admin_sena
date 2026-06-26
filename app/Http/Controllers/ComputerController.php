@@ -39,6 +39,7 @@ class ComputerController extends Controller
         $manejo = new Computer();
         $manejo->numero = $comillas->numero;
         $manejo->marca = $comillas->marca;
+        $manejo->save();
         return $manejo;
     }
 }
